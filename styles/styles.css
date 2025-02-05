@@ -1,0 +1,151 @@
+/* font-family: "Poppins", sans-serif; */
+
+:root {
+    --ff-sans: "Poppins", sans-serif;
+  
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 700;
+  
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+    --fs-800: 2rem;
+  
+    --clr-neutral-900: #474747;
+    --clr-neutral-400: #8d8989;
+    --clr-neutral-100: #ffffff;
+  
+    --clr-orange: #2c3e50;
+    --clr-green: #008000;
+    --clr-blue: #0f67e2;
+  }
+  
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: border-box;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-sans);
+    line-height: 1.6;
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  
+  .main-container{
+    max-width: 90%;
+    margin-inline: auto; 
+    margin-block: 1em;
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(230,230,250);
+    padding: 0 50px;
+  }
+  
+  .header-container{
+    text-align: center;
+    padding-bottom: 1.8em;
+  }
+  
+  .header-container h1{
+    font-size: var(--fs-900);
+    margin-bottom: 0.2em;
+    color: var(--clr-orange);
+  }
+  
+  .header--container h2{
+    font-size: var(--fs-500);
+    color: var(--clr-green);
+  }
+  
+  /* Header container ends here */
+  
+  .img-container{
+    background-color: white;
+    max-width: 35%;
+    border: 10px solid white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.8em;
+  }
+  
+  .img-container div{
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  
+  .majorEvent-container h2{
+    text-align: center;
+    margin-bottom: 0.6em;
+    font-size: var(--fs-600);
+  }
+  
+  ul{
+    margin-inline: auto;
+  }
+  
+  ul li{
+    font-size: var(--fs-400);
+    margin-bottom: 0.5em;
+    list-style: none;
+  }
+  
+  .footer-container{
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  .footer-container h2{
+    font-size: var(--fs-600);
+    font-family: "Courgette", cursive;
+    margin-bottom: 0.4em;
+  }
+  
+  .footer-container p{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .footer-container p a {
+    color: var(--clr-blue);
+  }
+  
+  .footer-container div{
+    font-size: 0.8rem;
+  }
+  
+  .footer-container div span{
+    color: var(--clr-blue);
+  }
+  
+  
+  @media (max-width: 720px) {
+    .main-container{
+      padding: 0 20px;
+    }
+    .img-container{
+      max-width: 90%;
+    }
+
+  .header-container h1{
+    font-size: var(--fs-800);
+  }
+  
+  .header-container{
+    text-align: center;
+  }
+  .footer-container h2{
+    line-height: 1.4;
+  }
+  }
